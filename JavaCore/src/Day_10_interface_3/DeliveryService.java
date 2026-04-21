@@ -7,8 +7,8 @@ public class DeliveryService {
         DeliveryVehicle best = null;
         for(DeliveryVehicle veh : list){
             if (veh.getCost() <= budget){
-                if ( best == null || veh.getCost() > best.getCost()){
-                    veh = best ;
+                if ( best == null || veh.getSpeed() > best.getSpeed()){
+                    best = veh ;
                 }
             }
         }

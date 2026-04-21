@@ -29,8 +29,7 @@ public class Main {
 
                     DeliveryService service = new DeliveryService();
 
-                    DeliveryVehicle result =
-                            service.chooseVehicle(vehicles, budget);
+                    DeliveryVehicle result = service.chooseVehicle(vehicles, budget);
 
                     if (result != null) {
                         System.out.println("Best vehicle: " + result.getName());
