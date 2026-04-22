@@ -9,13 +9,14 @@ public class Main {
 
         try {
             service.transfer(acc1,acc2,10000);
-            System.out.println("Chuyển khoản thành công");
-            System.out.println("Từ tài khoản:" + acc1.getBalance());
-            System.out.println("Đến tài khoản: " + acc2.getBalance());
+            System.out.println("Chuyển khoản thành công ! " );
+            System.out.println("Số dư còn lại " + acc1.getName()+ " : "  + acc1.getBalance());
+            System.out.println("Cập nhật số dư "+ acc2.getName()+ " : " + acc2.getBalance());
         } catch (Exception e){
             System.out.println("Lỗi : " +e.getMessage());
-            System.out.println("Hoàn thành giao dịch");
 
+        }finally {
+            System.out.println("Kết thúc giao dịch!");
         }
     }
 }
